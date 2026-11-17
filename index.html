@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Free Fire | Gaming Profile</title>
+  <style>
+    :root { --bg:#0b1220; --panel:#121d30; --text:#edf3ff; --muted:#9aabc5; --accent:#38bdf8; --line:rgba(255,255,255,.09); }
+    * { box-sizing:border-box }
+    body { margin:0; min-height:100vh; color:var(--text); font-family:Inter,Segoe UI,Arial,sans-serif;
+      background:radial-gradient(ellipse at 50% -15%,#1e4160 0,transparent 45%),var(--bg); }
+    .wrap { width:min(920px,calc(100% - 32px)); margin:0 auto; padding:42px 0 30px; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:28px; }
+    .brand { font-weight:800; letter-spacing:2px; font-size:14px; }
+    .status { color:#9be7c1; font-size:12px; border:1px solid rgba(155,231,193,.25); padding:7px 11px; border-radius:99px; }
+    .hero { text-align:center; padding:34px 22px 30px; background:linear-gradient(145deg,rgba(22,39,62,.95),rgba(14,24,40,.94)); border:1px solid var(--line); border-radius:24px; box-shadow:0 22px 70px rgba(0,0,0,.22); }
+    .avatar { width:118px; height:118px; border-radius:50%; object-fit:cover; border:3px solid var(--accent); padding:4px; background:#182b43; box-shadow:0 0 30px rgba(56,189,248,.2); }
+    h1 { margin:18px 0 7px; font-size:clamp(28px,6vw,42px); letter-spacing:.5px; }
+    .tagline { color:var(--muted); margin:0 auto; max-width:520px; line-height:1.6; }
+    .chips { display:flex; justify-content:center; flex-wrap:wrap; gap:8px; margin-top:20px; }
+    .chip { color:#c8eefe; background:rgba(56,189,248,.1); border:1px solid rgba(56,189,248,.18); padding:7px 12px; border-radius:99px; font-size:12px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:22px; }
+    .eyebrow { color:var(--accent); font-size:11px; font-weight:800; letter-spacing:1.8px; text-transform:uppercase; }
+    h2 { margin:8px 0 12px; font-size:20px; }
+    .muted { color:var(--muted); line-height:1.6; font-size:14px; }
+    .music-row { display:flex; align-items:center; gap:14px; margin-top:15px; }
+    .disc { width:48px; height:48px; flex:0 0 48px; display:grid; place-items:center; border-radius:50%; background:linear-gradient(145deg,#38bdf8,#2563eb); font-size:20px; }
+    .track { min-width:0; flex:1; }
+    .track strong { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .track small { color:var(--muted); display:block; margin-top:4px; }
+    audio { width:100%; margin-top:18px; accent-color:var(--accent); }
+    .note { font-size:12px; color:var(--muted); line-height:1.55; margin:12px 0 0; }
+    .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .link { display:inline-block; text-decoration:none; color:#eaf8ff; border:1px solid var(--line); border-radius:10px; padding:10px 13px; font-size:13px; transition:.2s; }
+    .link:hover { border-color:var(--accent); background:rgba(56,189,248,.08); }
+    footer { text-align:center; color:#71829d; font-size:12px; padding:24px 0 0; }
+    @media(max-width:650px) { .grid { grid-template-columns:1fr } .wrap { padding-top:24px } .hero { padding:28px 17px } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="brand">FF PLAYER CARD</div>
+      <div class="status">● GAMING PROFILE</div>
+    </header>
+
+    <section class="hero">
+      <!-- Đổi assets/avatar.svg thành ảnh của bạn, ví dụ assets/avatar.jpg -->
+      <img class="avatar" src="assets/avatar.svg" alt="Ảnh đại diện">
+      <h1>Võ Bá Thọ(vobatho123)</h1>
+      <p class="tagline">Free Fire player • PC Gaming • Chơi vui, chiến hết mình.</p>
+      <div class="chips">
+        <span class="chip">FREE FIRE</span>
+        <span class="chip">PC PLAYER</span>
+        <span class="chip">BOOYAH!</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="eyebrow">Now playing</div>
+        <h2>Nhạc của tôi</h2>
+        <p class="muted">HUSTLANG ALL DAY</p>
+        <div class="music-row">
+          <div class="disc">♫</div>
+          <div class="track">
+            <strong>HUSTLANG ALL DAY</strong>
+            <small>Phát bằng file nhạc bạn thêm vào website</small>
+          </div>
+        </div>
+        <!-- Tự phát có thể bị trình duyệt chặn. Bấm Play lần đầu để bắt đầu. -->
+        <audio id="music" controls loop preload="metadata">
+          <source src="assets/hustlang-all-day.mp3" type="audio/mpeg">
+          Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+        <p class="note">Bản nhạc sẽ tự lặp lại khi hết. Trình duyệt thường yêu cầu bạn bấm Play lần đầu.</p>
+      </article>
+
+      <article class="card">
+        <div class="eyebrow">About me</div>
+        <h2>Thông tin game thủ</h2>
+        <p class="muted">Đây là góc gaming cá nhân của mình. Bạn có thể thay tên, mô tả và liên kết bên dưới theo ý thích.</p>
+        <div class="links">
+          <a class="link" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a>
+          <a class="link" href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>© 2026 • Personal Free Fire Gaming Website</footer>
+  </main>
+</body>
+</html>
